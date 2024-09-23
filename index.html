@@ -18,15 +18,50 @@
                 </div>
                 <h2>Texto cifrado:</h2>
                 <div id="ciphertext" class="ciphertext-output"></div>
-               
-
             </form>
         </div>
-       
-    </div>
-    <button id="download" style="display: none;">Descargar</button>
 
-    
+        <!-- Sección de teclado para insertar símbolos cifrados -->
+        <div class="form-container">
+            <h2>Teclado cifrado:</h2>
+            <div id="cipher-keyboard" class="cipher-keyboard">
+                <!-- Botones con símbolos del cifrado Pigpen -->
+                <button onclick="addCipherLetter('a')" class="pigpen a"></button>
+                <button onclick="addCipherLetter('b')" class="pigpen b"></button>
+                <button onclick="addCipherLetter('c')" class="pigpen c"></button>
+                <button onclick="addCipherLetter('d')" class="pigpen d"></button>
+                <button onclick="addCipherLetter('e')" class="pigpen e"></button>
+                <button onclick="addCipherLetter('f')" class="pigpen f"></button>
+                <button onclick="addCipherLetter('g')" class="pigpen g"></button>
+                <button onclick="addCipherLetter('h')" class="pigpen h"></button>
+                <button onclick="addCipherLetter('i')" class="pigpen i"></button>
+                <button onclick="addCipherLetter('j')" class="pigpen j dotted"></button>
+                <button onclick="addCipherLetter('k')" class="pigpen k dotted"></button>
+                <button onclick="addCipherLetter('l')" class="pigpen l dotted"></button>
+                <button onclick="addCipherLetter('m')" class="pigpen m dotted"></button>
+                <button onclick="addCipherLetter('n')" class="pigpen n dotted"></button>
+                <button onclick="addCipherLetter('o')" class="pigpen o dotted"></button>
+                <button onclick="addCipherLetter('p')" class="pigpen p dotted"></button>
+                <button onclick="addCipherLetter('q')" class="pigpen q dotted"></button>
+                <button onclick="addCipherLetter('r')" class="pigpen r dotted"></button>
+                <button onclick="addCipherLetter('s')" class="pigpen s"></button>
+                <button onclick="addCipherLetter('t')" class="pigpen t"></button>
+                <button onclick="addCipherLetter('u')" class="pigpen u"></button>
+                <button onclick="addCipherLetter('v')" class="pigpen v"></button>
+                <button onclick="addCipherLetter('w')" class="pigpen w dotted"></button>
+                <button onclick="addCipherLetter('x')" class="pigpen x dotted"></button>
+                <button onclick="addCipherLetter('y')" class="pigpen y dotted"></button>
+                <button onclick="addCipherLetter('z')" class="pigpen z dotted"></button>
+            </div>
+
+            <div id="encoded-text" class="ciphertext-output"></div>
+            <button type="button" onclick="decode()">Descifrar</button>
+            <h2>Texto descifrado:</h2>
+            <div id="decoded-message"></div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
+
