@@ -157,8 +157,8 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .cipher-keyboard button:hover {
@@ -226,3 +226,24 @@ body {
     font-weight: bold;
 }
 
+/* Define a punto en el centro para las letras con la clase 'dotted' */
+.pigpen.dotted::after {
+    content: '';
+    display: block;
+    width: 6px; /* Tamaño del punto */
+    height: 6px; /* Tamaño del punto */
+    background-color: #fff; /* Color del punto */
+    border-radius: 50%; /* Para que sea un círculo */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Aplica la clase 'dotted' a las letras que la necesitan */
+.pigpen.j.dotted, .pigpen.k.dotted, .pigpen.l.dotted, .pigpen.m.dotted, 
+.pigpen.n.dotted, .pigpen.o.dotted, .pigpen.p.dotted, .pigpen.q.dotted, 
+.pigpen.r.dotted, .pigpen.w.dotted, .pigpen.x.dotted, .pigpen.y.dotted, 
+.pigpen.z.dotted {
+    position: relative;
+}
