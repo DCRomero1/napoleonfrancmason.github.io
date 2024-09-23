@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cifrado Napoleon-Francmasón</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cifrado Napoleon-Francmasón</h1>
+        <div class="form-container">
+            <form id="cipher-form">
+                <div class="input-area">
+                    <label for="plaintext">Francmasón:</label>
+                    <input type="text" id="plaintext" placeholder="Ingrese el texto" />
+                    <button type="button" onclick="encode()">Cifrar</button>
+                </div>
+                <h2>Texto cifrado:</h2>
+                <div id="ciphertext" class="ciphertext-output"></div>
+               
+
+            </form>
+        </div>
+       
+    </div>
+    <button id="download" style="display: none;">Descargar</button>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
